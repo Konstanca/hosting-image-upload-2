@@ -79,6 +79,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: hosting_image_upload_2_production
   username: hosting_image_upload_2
   password: <%= ENV["HOSTING_IMAGE_UPLOAD_2_DATABASE_PASSWORD"] %>
